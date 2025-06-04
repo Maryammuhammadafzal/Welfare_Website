@@ -10,58 +10,6 @@
   font-family: "Montserrat", Open Sans;
 }
 
-.header {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: column;
-}
-.topbar {
-  width: 100%;
-  height: 40px;
-  background-color: #e52868;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.topbar > div {
-  width: 70%;
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.topbar > div .left {
-  width: 50%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  align-items: center;
-}
-.topbar > div .right {
-  width: 50%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  align-items: center;
-}
-
-.navbar {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.navbar > div {
-  width: 70%;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .hero-bg {
   background-image: url(./images/hero-bg.png);
@@ -196,6 +144,9 @@
 
   .mobile-menu-icon.active #menu-icon {
     display: none;
+  }
+  .mobile-menu-icon.active #close-menu-icon {
+    display: block;
   }
   .menu.show #menu-box {
     display: block;
