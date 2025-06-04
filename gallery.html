@@ -1,11 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-</head>
-<body>
-        
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="//maddahrhythmexpert.com/shahan-welfare/wp-content/uploads/2024/09/1Untitled-1.png"
+      type="image/x-icon"
+    />
+    <!-- Tailwind CDN -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-dM8wE6oPCVXQOKndSADVkZMbZprDAx2uP0YI6iWSg8aP1J2u0zQbB1vHbO2tQxAvcZ3d0I4SxD6e+Gpbbt6R8g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <div class="main-container relative w-full h-auto min-h-screen">
+      <!-- Header -->
+      <div class="header w-full bg-white h-[110px] flex flex-col">
+        <div
+          class="w-full h-[110px] flex flex-col fixed top-0 left-0 z-50 bg-white"
+        >
+          <!-- Topbar -->
+          <div
+            class="topbar w-full text-white h-[40px] bg-[#E52868] flex justify-center items-center"
+          >
+            <div
+              class="md:w-[70%] w-full md:px-0 px-3 h-auto flex justify-between items-center"
+            >
+              <div class="left w-auto flex gap-5 lg:text-sm sm:text-xs">
+                <p class="flex gap-5">
+                  <i class="fa-solid fa-phone"></i> 0304 0798875
+                </p>
+                <p class="flex gap-5">
+                  <i class="fa-solid fa-envelope"></i> info@shahanwelfare.com
+                </p>
+              </div>
+              <div class="right w-auto flex gap-5">
+                <FaFacebook size="{15}" />
+                <FaXTwitter size="{15}" />
+                <ImLinkedin size="{15}" />
+                <FaSquareInstagram size="{15}" />
+                <TbBrandWhatsappFilled size="{15}" />
+              </div>
+            </div>
+          </div>
+          <!-- Header -->
+          <div class="w-full h-[70px] flex justify-center text-black">
+            <header
+              class="lg:w-[85%] h-[70px] w-full flex justify-center items-center h-auto"
+            >
+              <div class="w-full h-auto flex items-center justify-between px-4">
+                <div class="logo w-fit h-auto flex items-center gap-5">
+                  <div
+                    class="menu-icon md:hidden flex justify-center items-center"
+                  >
+                    <!-- <MenuIcon size={30} /> -->
+                  </div>
+                  <img src="./images/logo.png" alt="Logo" class="w-[150px]" />
+                </div>
+                <div class="tabs w-fit h-auto flex justify-center items-center">
+                  <ul
+                    class="justify-center items-center md:flex hidden md:gap-5 lg:gap-10 w-auto text-[#E52868] h-auto sunflower"
+                  >
+                    <li>
+                      <a
+                        href="/"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./who-we-are.html"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        Who We Are
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./our-compaign.html"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        Our Compaign
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./news.html"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        News
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./gallery.html"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        Gallery
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/contact-us/"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="button md:block hidden">
+                  <a
+                    href="/donate-now/"
+                    class="rounded-md max-sm:w-[130px] bg-[#E52868] text-sm cursor-pointer px-4 text-white py-2"
+                  >
+                    Donate Now
+                  </a>
+                </div>
+              </div>
+            </header>
+          </div>
+        </div>
+      </div>
+   
+     <!-- Faq Section -->
+      <div
+        class="faq w-full bg-white h-auto flex justify-center py-10 items-center"
+      >
+        <div
+          class="w-full px-3 lg:w-[65%] h-auto flex flex-col justify-center items-center gap-8"
+        >
+
+          <section
+            class="w-full bg-[#7C1C7E] p-1 rounded-md"
+            aria-labelledby="faq-heading"
+            itemscope
+            itemtype="https://schema.org/FAQPage"
+          >
+            <div
+              class="w-full flex flex-col justify-center text-white items-center"
+            >
+              <!-- FAQ Item 1 -->
+              <div
+                class="border-b border-gray-200 py-2"
+                itemscope
+                itemprop="mainEntity"
+                itemtype="https://schema.org/Question"
+              >
+                <div class="relative">
+                  <input
+                    type="checkbox"
+                    id="faq-1"
+                    class="faq-checkbox"
+                    aria-labelledby="faq-label-1"
+                  />
+                  <label
+                    for="faq-1"
+                    id="faq-label-1"
+                    class="faq-label flex justify-between items-center w-full text-left font-medium cursor-pointer px-2 py-1 text-sm max-sm:text-xs"
+                    itemprop="name"
+                  >
+                    <span>1. What is Shahan Welfare's mission?</span>
+                    <svg
+                      class="faq-arrow w-5 h-5 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </label>
+                  <div
+                    class="faq-content py-2 mt-2 text-sm bg-white pl-2 text-black/50"
+                    itemscope
+                    itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer"
+                  >
+                    <p itemprop="text">
+                      Shahan Welfare is a non-profit organization dedicated to
+                      supporting people in extreme need. Our mission is to
+                      provide essential resources and services to
+                      underprivileged communities through programs focused on
+                      healthcare, education, and emergency relief.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div
+                class="border-b border-gray-200 py-2"
+                itemscope
+                itemprop="mainEntity"
+                itemtype="https://schema.org/Question"
+              >
+                <div class="relative">
+                  <input
+                    type="checkbox"
+                    id="faq-2"
+                    class="faq-checkbox"
+                    aria-labelledby="faq-label-1"
+                  />
+                  <label
+                    for="faq-2"
+                    id="faq-label-2"
+                    class="faq-label flex justify-between items-center w-full text-left font-medium cursor-pointer px-2 py-1 text-sm max-sm:text-xs"
+                    itemprop="name"
+                  >
+                    <span>2. How can I make a donation to Shahan Welfare?</span>
+                    <svg
+                      class="faq-arrow w-5 h-5 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </label>
+                  <div
+                    class="faq-content py-2 mt-2 text-sm bg-white pl-2 text-black/50"
+                    itemscope
+                    itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer"
+                  >
+                    <p itemprop="text">
+                      You can make a donation through our secure online platform
+                      using credit/debit cards, PayPal, or bank transfer.
+                      Additionally, you can set up continuous donations to
+                      provide ongoing support.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div
+                class="border-b border-gray-200 py-2"
+                itemscope
+                itemprop="mainEntity"
+                itemtype="https://schema.org/Question"
+              >
+                <div class="relative">
+                  <input
+                    type="checkbox"
+                    id="faq-3"
+                    class="faq-checkbox"
+                    aria-labelledby="faq-label-1"
+                  />
+                  <label
+                    for="faq-3"
+                    id="faq-label-3"
+                    class="faq-label flex justify-between items-center w-full text-left font-medium cursor-pointer px-2 py-1 text-sm max-sm:text-xs"
+                    itemprop="name"
+                  >
+                    <span
+                      >3. What types of projects does Shahan Welfare fund?</span
+                    >
+                    <svg
+                      class="faq-arrow w-5 h-5 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </label>
+                  <div
+                    class="faq-content py-2 mt-2 text-sm bg-white pl-2 text-black/50"
+                    itemscope
+                    itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer"
+                  >
+                    <p itemprop="text">
+                      Shahan Welfare funds a variety of projects including
+                      medical camps, educational scholarships, disaster relief
+                      efforts, and community development programs. These
+                      projects aim to address urgent needs and create long-term
+                      positive change in the communities we serve.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div
+                class="border-b border-gray-200 py-2"
+                itemscope
+                itemprop="mainEntity"
+                itemtype="https://schema.org/Question"
+              >
+                <div class="relative">
+                  <input
+                    type="checkbox"
+                    id="faq-4"
+                    class="faq-checkbox"
+                    aria-labelledby="faq-label-1"
+                  />
+                  <label
+                    for="faq-4"
+                    id="faq-label-4"
+                    class="faq-label flex justify-between items-center w-full text-left font-medium cursor-pointer px-2 py-1 text-sm max-sm:text-xs"
+                    itemprop="name"
+                  >
+                    <span>4. How can I get involved with Shahan Welfare?</span>
+                    <svg
+                      class="faq-arrow w-5 h-5 transform transition-transform duration-200"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
+                  </label>
+                  <div
+                    class="faq-content py-2 mt-2 text-sm bg-white pl-2 text-black/50"
+                    itemscope
+                    itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer"
+                  >
+                    <p itemprop="text">
+                      There are several ways to get involved with Shahan
+                      Welfare. You can volunteer your time, participate in our
+                      fundraising events, or become a recurring donor. Visit our
+                      page to learn more about opportunities to contribute and
+                      make a difference.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="w-full h-auto pt-20">
+        <div
+          class="w-full h-auto bg-neutral-50 flex justify-center items-center flex-col"
+        >
+          <footer
+            class="lg:w-[80%] px-3 py-3 h-auto flex md:flex-row flex-col gap-5 justify-center"
+          >
+            <div
+              class="logo md:w-[25%] w-full max-md:items-center flex flex-col gap-3"
+            >
+              <img
+                src="./images/logo.png"
+                alt="shahan-logo"
+                class="max-w-[200px]"
+              />
+              <p class="text-xs text-black/50 max-md:text-center leading-6">
+                Whatever it is that you care about, there will be a charity
+                working on it. Charities help in lots of different ways
+              </p>
+              <div class="flex gap-4">
+                <a href="">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61564329982471"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+            <div
+              class="menu-link md:w-[25%] max-md:items-center max-md:text-center w-full flex flex-col gap-3"
+            >
+              <h2 class="text-base text-black font-medium">Menu</h2>
+              <ul class="flex flex-col gap-4">
+                <li>
+                  <a href="" class="text-black/50 text-xs font-medium"
+                    >Donations</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-black/50 text-xs font-medium"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-black/50 text-xs font-medium"
+                    >Categories</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-black/50 text-xs font-medium"
+                    >Volunteers</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-black/50 text-xs font-medium"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div
+              class="about-link md:w-[25%] max-md:items-center max-md:text-center w-full flex flex-col gap-3"
+            >
+              <h2 class="text-base text-black font-medium">About us</h2>
+              <ul class="flex flex-col gap-4">
+                <li>
+                  <a href="" class="text-black/50 text-xs font-medium"
+                    >How it work</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-black/50 text-xs font-medium"
+                    >Contact us</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="text-black/50 text-xs font-medium">FAQ</a>
+                </li>
+                <li>
+                  <a href="" class="text-black/50 text-xs font-medium">Help</a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="contact-info md:w-[25%] max-md:items-center max-md:text-center w-full flex flex-col gap-5"
+            >
+              <h2 class="text-base text-black font-medium">Contact Info</h2>
+              <ul class="flex flex-col gap-5">
+                <li class="flex gap-2">
+                  <span class="p-2 rounded-full bg-[#7C1C7E]">
+                    <i class="fa-solid fa-phone"></i>
+                  </span>
+                  <p
+                    class="text-black/50 max-md:text-center text-xs font-medium"
+                  >
+                    0304 4798875
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <span class="p-2 rounded-full bg-[#7C1C7E]">
+                    <i class="fa-solid fa-envelope"></i>
+                  </span>
+                  <p
+                    class="text-black/50 max-md:text-center text-xs font-medium"
+                  >
+                    info@shahanwelfare.com
+                  </p>
+                </li>
+                <li class="flex gap-2">
+                  <span class="p-2 rounded-full bg-[#7C1C7E]">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                  <p
+                    class="text-black/50 max-md:text-center text-xs font-medium"
+                  >
+                    Pakistan Lahore
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </footer>
+          <div
+            class="copyright flex w-full pt-2 pb-2 px-3 bg-[#E52868] justify-center items-center"
+          >
+            <h2 class="text-white text-sm max-sm:text-xs">
+              shahanwelfare © 2024, All Rights Reserved.
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="fixed w-full h-[70px] bottom-0 right-10 flex justify-end items-end"
+      >
+        <div
+          class="bg-black/35 w-[60px] flex justify-center items-center h-[60px]"
+        >
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
