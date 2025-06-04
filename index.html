@@ -9,16 +9,12 @@
       type="image/x-icon"
     />
     <!-- Tailwind CDN -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font Awesome CDN -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-dM8wE6oPCVXQOKndSADVkZMbZprDAx2uP0YI6iWSg8aP1J2u0zQbB1vHbO2tQxAvcZ3d0I4SxD6e+Gpbbt6R8g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
     <!-- Google Font -->
@@ -46,11 +42,11 @@
             <div
               class="md:w-[70%] w-full md:px-0 px-3 h-auto flex justify-between items-center"
             >
-              <div class="left w-auto flex gap-5 lg:text-sm sm:text-xs">
-                <p class="flex gap-5">
+              <div class="left w-auto flex items-center space-x-2 lg:text-sm text-xs">
+                <p class="flex gap-2 items-center">
                   <i class="fa-solid fa-phone"></i> 0304 0798875
                 </p>
-                <p class="flex gap-5">
+                <p class="flex gap-2 items-center">
                   <i class="fa-solid fa-envelope"></i> info@shahanwelfare.com
                 </p>
               </div>
@@ -133,19 +129,12 @@
                 </div>
                 <div id="toggle-menu" class="mobile-menu-icon md:hidden block text-black">
                   <div id="menu-icon" class="bg-neutral-50 p-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      x="0px"
-                      y="0px"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 30 30"
-                    >
-                      <path
-                        d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"
-                      ></path>
-                    </svg>
+                    <i class="fa-solid fa-bars"></i>
                   </div>
+                  <div id="close-menu-icon" class="bg-neutral-50 p-2">
+                    <i class="fa-solid fa-xmark"></i>
+                  </div>
+                  
                 </div>
                 <div id="mobile-menu" class="menu absolute top-16 left-0 w-full h-auto" >
                   <div id="menu-box" class="w-full min-h-[300px] bg-white flex hidden">
@@ -224,7 +213,7 @@
         >
           <!-- Slideshow container -->
           <div
-            class="slideshow-container lg:w-[85%] w-full md:h-[110vh] h-[60vh] flex"
+            class="slideshow-container lg:w-[85%] w-full md:h-[110vh] items-end h-[60vh] flex"
           >
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade w-full h-full block">
@@ -274,11 +263,11 @@
           </div>
 
           <div
-            class="overlay w-full h-screen absolute flex justify-center items-center max-md:top-0 top-10 left-0"
+            class="overlay w-full h-screen absolute flex justify-center items-center max-md:top-0 top-9 left-0"
           >
             <img
               src="./images/map.png"
-              class="lg:w-[85%] h-[60vh] w-full md:h-[110vh]"
+              class="lg:w-[85%] h-[60vh] w-full md:h-[112vh]"
               alt="map"
             />
           </div>
