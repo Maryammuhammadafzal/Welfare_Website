@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="//maddahrhythmexpert.com/shahan-welfare/wp-content/uploads/2024/09/1Untitled-1.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="//maddahrhythmexpert.com/shahan-welfare/wp-content/uploads/2024/09/1Untitled-1.png"
+      type="image/x-icon"
+    />
     <!-- Tailwind CDN -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -62,9 +66,9 @@
           <!-- Header -->
           <div class="w-full h-[70px] flex justify-center text-black">
             <header
-              class="lg:w-[85%] h-[70px] w-full flex justify-center items-center h-auto"
+              class="lg:w-[85%] h-[70px] w-full flex justify-center  items-center h-auto"
             >
-              <div class="w-full h-auto flex items-center justify-between px-4">
+              <div class="w-full h-auto flex items-center relative justify-between px-4">
                 <div class="logo w-fit h-auto flex items-center gap-5">
                   <div
                     class="menu-icon md:hidden flex justify-center items-center"
@@ -126,6 +130,78 @@
                       </a>
                     </li>
                   </ul>
+                </div>
+                <div class="mobile-menu-icon md:hidden block text-black">
+                  <div class="bg-neutral-50 p-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 30 30"
+                    >
+                      <path
+                        d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="menu absolute top-0 left-0 w-full min-h-50" style="display: none;">
+                  <div class="w-full h-full bg-white flex">
+                    <ul
+                    class="justify-center items-center md:flex hidden md:gap-5 lg:gap-10 w-auto text-[#E52868] h-auto sunflower"
+                  >
+                    <li>
+                      <a
+                        href="/"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./who-we-are.html"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        Who We Are
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./our-compaign.html"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        Our Compaign
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./news.html"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        News
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="./gallery.html"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        Gallery
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/contact-us/"
+                        class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
+                      >
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                  </div>
                 </div>
                 <div class="button md:block hidden">
                   <a
@@ -310,7 +386,8 @@
               class="button"
             >
               <a
-                href="/who-we-are/" class="rounded-md max-sm:w-[130px] bg-[#7C1C7E] cursor-pointer text-sm px-4 text-white py-2"
+                href="/who-we-are/"
+                class="rounded-md max-sm:w-[130px] bg-[#7C1C7E] cursor-pointer text-sm px-4 text-white py-2"
               >
                 About us
               </a>
@@ -1256,9 +1333,13 @@
         </div>
       </div>
 
-      <div class="fixed w-full h-[70px] bottom-0 right-10 flex justify-end items-end">
-        <div class="bg-black/35 w-[60px] flex justify-center items-center h-[60px]">
-         <i class="fa fa-angle-up" aria-hidden="true" ></i>
+      <div
+        class="fixed w-full h-[70px] bottom-0 right-10 flex justify-end items-end"
+      >
+        <div
+          class="bg-black/35 w-[60px] flex justify-center items-center h-[60px]"
+        >
+          <i class="fa fa-angle-up" aria-hidden="true"></i>
         </div>
       </div>
     </div>
