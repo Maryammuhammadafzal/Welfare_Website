@@ -32,3 +32,12 @@ window.onload = function () {
     plusSlides(1);
   }, 3000);
 };
+
+
+let toggleMenuIcon = document.getElementById('toggle-menu');
+let mobileMenu = document.getElementById('mobile-menu');
+
+toggleMenuIcon.addEventListener('click' , ()=> {
+  toggleMenuIcon.classList.toggle('active');
+  mobileMenu.classList.toggle('show');
+})
