@@ -134,6 +134,10 @@
   border-radius: 0.25rem;
 }
 
+.compaign-card:hover .icon{
+  color: white;
+}
+
 @media (min-width: 768px) {
   .menu.show #menu-box {
     display: none;
