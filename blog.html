@@ -86,21 +86,19 @@
               <div
                 class="w-full h-auto flex items-center relative justify-between px-4"
               >
-                <div class="logo w-fit h-auto flex items-center gap-5">
-                  <div
-                    class="menu-icon md:hidden flex justify-center items-center"
-                  >
-                    <!-- <MenuIcon size={30} /> -->
-                  </div>
+                <a
+                  href="./index.html"
+                  class="logo w-fit h-auto flex items-center gap-5"
+                >
                   <img src="./images/logo.png" alt="Logo" class="w-[150px]" />
-                </div>
+                </a>
                 <div class="tabs w-fit h-auto flex justify-center items-center">
                   <ul
                     class="justify-center items-center md:flex hidden md:gap-5 lg:gap-10 w-auto text-[#E52868] h-auto sunflower"
                   >
                     <li>
                       <a
-                        href="/"
+                        href="./index.html"
                         class="hover:border-b-2 hover:border-[#E52868] focus:border-b-2 focus:border-[#E52868] active:border-b-2 active:border-[#E52868] py-[10px] text-[12px] font-medium"
                       >
                         Home
@@ -172,7 +170,7 @@
                     >
                       <li class="w-full">
                         <a
-                          href="/"
+                          href="./index.html"
                           class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
                         >
                           Home
@@ -238,11 +236,19 @@
       <!-- Blog Section -->
       <div class="w-full h-auto flex justify-center items-center py-10">
         <div
-          class="lg:w-[85%] w-[98%] flex lg:flex-row flex-col max-lg:gap-5 max-lg:items-center justify-center"
+          class="lg:w-[85%] w-[98%] flex lg:flex-row flex-col max-lg:gap-5 gap-5 max-lg:items-center justify-center"
         >
           <div
             class="left lg:w-[75%] md:w-[90%] w-full flex flex-col gap-10 h-auto"
           >
+            <div class="w-full">
+              <img
+                src="./images/blog-img-1.png"
+                alt="blog-img"
+                class="w-full"
+              />
+            </div>
+
             <div class="flex flex-col w-full h-auto gap-4">
               <div class="flex gap-2">
                 <div class="date">
@@ -258,7 +264,8 @@
                     class="text-sky-600 font-semibold text-3xl"
                     style="font-family: 'Outfit', Open Sans"
                   >
-                    0x1c8c5b6a
+                    How Shahan Welfare is Supporting Underprivileged Communities
+                    Around the World
                   </h2>
                   <div
                     class="w-full flex gap-2 px-2"
@@ -293,7 +300,64 @@
                   </div>
                 </div>
               </div>
-              <p class="text-black/50 text-sm">0x1c8c5b6a</p>
+              <div class="flex flex-col gap-6 p-3" style="font-family: 'Outfit' , Open Sans;">
+                <h2 class="text-3xl font-medium">Introduction:</h2>
+                <p class="text-black/50">
+                  In a world where millions of people lack access to basic
+                  necessities, non-profit organizations like Shahan Welfare are
+                  stepping up to provide essential support. We are dedicated to
+                  uplifting <strong>underprivileged</strong
+                  ><strong> communities</strong> through our impressive programs
+                  in healthcare, education, and emergency relief.
+                </p>
+                <ul class="flex flex-col gap-5">
+                  <li class="flex flex-col gap-3">
+                    <h3  class="text-xl font-medium">Healthcare Access:</h3>
+                    <p class="text-black/50">
+                      In many <strong>underprivileged</strong
+                      ><strong> communities</strong>, access to healthcare is
+                      limited. Shahan Welfare organizes medical camps and
+                      provides treatments and medications to those in need. By
+                      focusing on <strong>underprivileged</strong
+                      ><strong> communities</strong>, we ensure that healthcare
+                      reaches those who need it most.
+                    </p>
+                  </li>
+                  <li class="flex flex-col gap-3">
+                    <h3 class="text-xl font-medium">Education Programs:</h3>
+                    <p class="text-black/50">
+                      Education is key to breaking the cycle of poverty in
+                      <strong>underprivileged</strong
+                      ><strong> communities</strong>. Our educational
+                      initiatives provide scholarships, school supplies, and
+                      learning opportunities to children and adults in these
+                      areas. By empowering <strong>underprivileged</strong
+                      ><strong> communities</strong>, we help to build a
+                      brighter future.
+                    </p>
+                  </li>
+                  <li class="flex flex-col gap-3">
+                    <h3 class="text-xl font-medium">Emergency Relief:</h3>
+                    <p class="text-black/50">
+                      During crises, <strong>underprivileged</strong
+                      ><strong> communities</strong> are often strongly
+                      affected. Shahan Welfare provides immediate relief,
+                      including food, water, and shelter, to families in these
+                      <strong>underprivileged</strong
+                      ><strong> communities</strong> when they need it most.
+                    </p>
+                  </li>
+                </ul>
+                <h2 class="text-2xl font-medium">Conclusion:</h2>
+                <p class="text-black/50">
+                  Through your support, we can continue expanding our reach to
+                  more <strong>underprivileged</strong
+                  ><strong> communities</strong> in need. Join us in making a
+                  difference today by helping these
+                  <strong>underprivileged</strong
+                  ><strong> communities </strong>to grow.
+                </p>
+              </div>
             </div>
 
             <div class="flex w-full h-auto flex-col gap-5">
@@ -444,7 +508,7 @@
               </div>
             </div>
 
-            <section class="flex flex-col gap-5 w-full h-auto">
+            <div class="section flex flex-col gap-5 w-full h-auto">
               <div class="swiper mySwiper max-lg:m-0 container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide card max-lg:max-w-[300px]">
@@ -723,7 +787,7 @@
               <!-- <div class="swiper-button-next"></div>
               <div class="swiper-button-prev"></div> -->
               <div class="swiper-pagination"></div>
-            </section>
+            </div>
           </div>
 
           <div
