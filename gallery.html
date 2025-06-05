@@ -30,9 +30,12 @@
     <title>Gallery</title>
   </head>
   <body>
-    <div class="main-container relative w-full h-auto min-h-screen">
+    <div
+      id="main-container"
+      class="main-container relative w-full h-auto min-h-screen"
+    >
       <!-- Header -->
-    <div class="header w-full bg-white h-[110px] flex flex-col">
+      <div class="header w-full bg-white h-[110px] flex flex-col">
         <div
           class="w-full h-[110px] flex flex-col fixed top-0 left-0 z-50 bg-white"
         >
@@ -43,7 +46,9 @@
             <div
               class="lg:w-[75%] md:w-[85%] w-full md:px-0 px-3 h-auto flex justify-between items-center"
             >
-              <div class="left w-[50%] flex sm:flex-row flex-col sm:items-center sm:gap-2 lg:text-sm text-xs">
+              <div
+                class="left w-[50%] flex sm:flex-row flex-col sm:items-center sm:gap-2 lg:text-sm text-xs"
+              >
                 <p class="flex gap-2 items-center font-medium">
                   <i class="fa-solid fa-phone"></i> 0304 0798875
                 </p>
@@ -51,7 +56,9 @@
                   <i class="fa-solid fa-envelope"></i> info@shahanwelfare.com
                 </p>
               </div>
-              <div class="right w-[50%] justify-end md:justify-center flex space-x-5">
+              <div
+                class="right w-[50%] justify-end md:justify-center flex space-x-5"
+              >
                 <a href="">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
@@ -70,9 +77,11 @@
           <!-- Header -->
           <div class="w-full h-[70px] flex justify-center text-black">
             <header
-              class="lg:w-[85%] h-[70px] w-full flex justify-center  items-center h-auto"
+              class="lg:w-[85%] h-[70px] w-full flex justify-center items-center h-auto"
             >
-              <div class="w-full h-auto flex items-center relative justify-between px-4">
+              <div
+                class="w-full h-auto flex items-center relative justify-between px-4"
+              >
                 <div class="logo w-fit h-auto flex items-center gap-5">
                   <div
                     class="menu-icon md:hidden flex justify-center items-center"
@@ -135,69 +144,77 @@
                     </li>
                   </ul>
                 </div>
-                <div id="toggle-menu" class="mobile-menu-icon md:hidden block text-black">
+                <div
+                  id="toggle-menu"
+                  class="mobile-menu-icon md:hidden block text-black"
+                >
                   <div id="menu-icon" class="bg-neutral-50 p-2">
                     <i class="fa-solid fa-bars"></i>
                   </div>
                   <div id="close-menu-icon" class="bg-neutral-50 p-2 hidden">
                     <i class="fa-solid fa-xmark"></i>
                   </div>
-                  
                 </div>
-                <div id="mobile-menu" class="menu absolute top-16 left-0 w-full h-auto" >
-                  <div id="menu-box" class="w-full min-h-[300px] bg-white flex hidden">
-                    <ul
-                    class="justify-center items-center flex flex-col gap-5 lg:gap-10 w-full text-black h-auto "
+                <div
+                  id="mobile-menu"
+                  class="menu absolute top-16 left-0 w-full h-auto"
+                >
+                  <div
+                    id="menu-box"
+                    class="w-full min-h-[300px] bg-white flex hidden"
                   >
-                    <li class="w-full">
-                      <a
-                        href="/"
-                        class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
-                      >
-                        Home
-                      </a>
-                    </li>
-                    <li class="w-full">
-                      <a
-                        href="./who-we-are.html"
-                        class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
-                      >
-                        Who We Are
-                      </a>
-                    </li>
-                    <li class="w-full">
-                      <a
-                        href="./our-compaign.html"
-                        class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
-                      >
-                        Our Compaign
-                      </a>
-                    </li>
-                    <li class="w-full">
-                      <a
-                        href="./news.html"
-                        class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
-                      >
-                        News
-                      </a>
-                    </li>
-                    <li class="w-full">
-                      <a
-                        href="./gallery.html"
-                        class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
-                      >
-                        Gallery
-                      </a>
-                    </li>
-                    <li class="w-full">
-                      <a
-                        href="./contact-us.html"
-                        class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
-                      >
-                        Contact Us
-                      </a>
-                    </li>
-                  </ul>
+                    <ul
+                      class="justify-center items-center flex flex-col gap-5 lg:gap-10 w-full text-black h-auto"
+                    >
+                      <li class="w-full">
+                        <a
+                          href="/"
+                          class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
+                        >
+                          Home
+                        </a>
+                      </li>
+                      <li class="w-full">
+                        <a
+                          href="./who-we-are.html"
+                          class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
+                        >
+                          Who We Are
+                        </a>
+                      </li>
+                      <li class="w-full">
+                        <a
+                          href="./our-compaign.html"
+                          class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
+                        >
+                          Our Compaign
+                        </a>
+                      </li>
+                      <li class="w-full">
+                        <a
+                          href="./news.html"
+                          class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
+                        >
+                          News
+                        </a>
+                      </li>
+                      <li class="w-full">
+                        <a
+                          href="./gallery.html"
+                          class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
+                        >
+                          Gallery
+                        </a>
+                      </li>
+                      <li class="w-full">
+                        <a
+                          href="./contact-us.html"
+                          class="hover:bg-black/80 active:bg-black/80 w-full block hover:text-white py-2 px-5 text-[12px] font-medium"
+                        >
+                          Contact Us
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
                 <div class="button md:block hidden">
@@ -827,7 +844,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-1.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -837,7 +854,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-2.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -847,7 +864,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-3.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -857,7 +874,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-4.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -867,17 +884,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-5.jpg"
-                          class="md:h-[270px] md:w-[250px]"
-                          alt="img"
-                        />
-                      </div>
-                      <div class="image w-auto h-auto relative">
-                        <div
-                          class="overlay absolute top-0 left-0 w-full h-full bg-transparent hover:bg-black/25 transition-all transform-bg duration-900"
-                        ></div>
-                        <img
-                          src="./images/gallery-sec-4-img-6.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -887,7 +894,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-7.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -897,7 +904,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-8.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -907,7 +914,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-9.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -917,7 +924,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-10.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -927,7 +934,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-11.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -937,7 +944,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-12.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -947,7 +954,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-13.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -957,7 +964,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-14.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -967,7 +974,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-15.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -977,7 +984,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-16.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -987,7 +994,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-17.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -997,7 +1004,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-18.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1007,7 +1014,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-19.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1017,7 +1024,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-20.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1027,7 +1034,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-21.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1037,7 +1044,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-22.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1047,7 +1054,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-23.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1057,7 +1064,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-24.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1067,7 +1074,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-25.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1077,7 +1084,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-26.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1087,7 +1094,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-27.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1097,7 +1104,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-28.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1107,7 +1114,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-29.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1117,7 +1124,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-30.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1127,7 +1134,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-31.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1137,7 +1144,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-32.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1147,7 +1154,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-33.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1157,7 +1164,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-34.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1167,7 +1174,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-35.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1177,7 +1184,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-36.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1187,7 +1194,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-37.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1197,7 +1204,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-38.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1207,7 +1214,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-39.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1217,7 +1224,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-40.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1227,7 +1234,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-41.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1237,7 +1244,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-42.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1247,7 +1254,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-43.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1257,7 +1264,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-44.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1267,7 +1274,7 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-45.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1277,7 +1284,87 @@
                         ></div>
                         <img
                           src="./images/gallery-sec-4-img-46.jpg"
-                          class="md:h-[270px] md:w-[250px]"
+                          class="md:h-[230px] md:w-[250px]"
+                          alt="img"
+                        />
+                      </div>
+                      <div class="image w-auto h-auto relative">
+                        <div
+                          class="overlay absolute top-0 left-0 w-full h-full bg-transparent hover:bg-black/25 transition-all transform-bg duration-900"
+                        ></div>
+                        <img
+                          src="./images/gallery-sec-4-img-47.jpg"
+                          class="md:h-[230px] md:w-[250px]"
+                          alt="img"
+                        />
+                      </div>
+                        <div class="image w-auto h-auto relative">
+                        <div
+                          class="overlay absolute top-0 left-0 w-full h-full bg-transparent hover:bg-black/25 transition-all transform-bg duration-900"
+                        ></div>
+                        <img
+                          src="./images/gallery-sec-4-img-48.jpg"
+                          class="md:h-[230px] md:w-[250px]"
+                          alt="img"
+                        />
+                      </div>
+                        <div class="image w-auto h-auto relative">
+                        <div
+                          class="overlay absolute top-0 left-0 w-full h-full bg-transparent hover:bg-black/25 transition-all transform-bg duration-900"
+                        ></div>
+                        <img
+                          src="./images/gallery-sec-4-img-49.jpg"
+                          class="md:h-[230px] md:w-[250px]"
+                          alt="img"
+                        />
+                      </div>
+                        <div class="image w-auto h-auto relative">
+                        <div
+                          class="overlay absolute top-0 left-0 w-full h-full bg-transparent hover:bg-black/25 transition-all transform-bg duration-900"
+                        ></div>
+                        <img
+                          src="./images/gallery-sec-4-img-50.jpg"
+                          class="md:h-[230px] md:w-[250px]"
+                          alt="img"
+                        />
+                      </div>
+                        <div class="image w-auto h-auto relative">
+                        <div
+                          class="overlay absolute top-0 left-0 w-full h-full bg-transparent hover:bg-black/25 transition-all transform-bg duration-900"
+                        ></div>
+                        <img
+                          src="./images/gallery-sec-4-img-51.jpg"
+                          class="md:h-[230px] md:w-[250px]"
+                          alt="img"
+                        />
+                      </div>
+                        <div class="image w-auto h-auto relative">
+                        <div
+                          class="overlay absolute top-0 left-0 w-full h-full bg-transparent hover:bg-black/25 transition-all transform-bg duration-900"
+                        ></div>
+                        <img
+                          src="./images/gallery-sec-4-img-52.jpg"
+                          class="md:h-[230px] md:w-[250px]"
+                          alt="img"
+                        />
+                      </div>
+                        <div class="image w-auto h-auto relative">
+                        <div
+                          class="overlay absolute top-0 left-0 w-full h-full bg-transparent hover:bg-black/25 transition-all transform-bg duration-900"
+                        ></div>
+                        <img
+                          src="./images/gallery-sec-4-img-53.jpg"
+                          class="md:h-[230px] md:w-[250px]"
+                          alt="img"
+                        />
+                      </div>
+                        <div class="image w-auto h-auto relative">
+                        <div
+                          class="overlay absolute top-0 left-0 w-full h-full bg-transparent hover:bg-black/25 transition-all transform-bg duration-900"
+                        ></div>
+                        <img
+                          src="./images/gallery-sec-4-img-55.jpg"
+                          class="md:h-[230px] md:w-[250px]"
                           alt="img"
                         />
                       </div>
@@ -1412,7 +1499,7 @@
         </div>
       </div>
 
-     <!-- Footer -->
+      <!-- Footer -->
       <div class="w-full h-auto pt-10">
         <div
           class="w-full h-auto bg-neutral-50 flex justify-center items-center flex-col"
@@ -1508,7 +1595,9 @@
               <h2 class="text-base text-black font-medium">Contact Info</h2>
               <ul class="flex flex-col gap-5">
                 <li class="flex gap-2">
-                  <span class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]">
+                  <span
+                    class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]"
+                  >
                     <i class="fa-solid text-[10px] fa-phone"></i>
                   </span>
                   <p
@@ -1518,7 +1607,9 @@
                   </p>
                 </li>
                 <li class="flex gap-2">
-                  <span class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]">
+                  <span
+                    class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]"
+                  >
                     <i class="fa-solid text-[10px] fa-envelope"></i>
                   </span>
                   <p
@@ -1528,7 +1619,9 @@
                   </p>
                 </li>
                 <li class="flex gap-2">
-                  <span class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]">
+                  <span
+                    class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]"
+                  >
                     <i class="fa-solid text-[10px] fa-location-dot"></i>
                   </span>
                   <p
@@ -1551,13 +1644,13 @@
       </div>
 
       <div
-        class="fixed w-full h-[70px] bottom-0 right-10 flex justify-end items-end"
+        class="fixed w-full h-[60px] bottom-0 right-10 flex justify-end items-end"
       >
         <div
-          class="bg-black/35 w-[60px] text-white flex justify-center items-center h-[60px]"
+          class="bg-black/50 w-[60px] text-white flex justify-center items-center h-[60px]"
         >
           <a href="#main-container">
-                <i class="fa fa-angle-up font-bold text-lg" aria-hidden="true"></i>
+            <i class="fa fa-angle-up font-bold text-lg" aria-hidden="true"></i>
           </a>
         </div>
       </div>
