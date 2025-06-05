@@ -234,8 +234,8 @@
       <!-- Blog Section -->
       <div class="w-full h-auto flex justify-center items-center py-10">
         <div class="w-[85%] flex justify-center">
-          <div class="left w-[75%] flex flex-col gap-5 h-auto">
-            <div class="flex flex-col w-full h-auto gap-1">
+          <div class="left w-[75%] flex flex-col gap-10 h-auto">
+            <div class="flex flex-col w-full h-auto gap-4">
               <div class="flex gap-2">
                 <div class="date">
                   <p class="py-2 px-3 bg-neutral-100 font-medium text-sky-500">
@@ -252,28 +252,160 @@
                   >
                     0x1c8c5b6a
                   </h2>
-                  <div class="w-full flex gap-2 px-2"
-                  style="font-family: 'Outfit' , Open Sans;">
+                  <div
+                    class="w-full flex gap-2 px-2"
+                    style="font-family: 'Outfit', Open Sans"
+                  >
                     <div class="flex gap-2 text-sm items-center font-light">
                       <i class="fa-regular fa-user text-xs text-black"></i>
-                      <span>By <a href="#" class="text-sky-500">webadmin</a></span>
+                      <span
+                        >By <a href="#" class="text-sky-500">webadmin</a></span
+                      >
                     </div>
                     <div class="flex gap-2 text-sm items-center font-light">
                       <i class="fa-regular fa-folder"></i>
-                      <span><a href="#" class="text-sky-500">Uncategorized</a></span>
+                      <span
+                        ><a href="#" class="text-sky-500"
+                          >Uncategorized</a
+                        ></span
+                      >
                     </div>
                     <div class="flex gap-2 text-sm items-center font-light">
-                     <i class="fa-regular fa-envelope"></i>
-                      <span><a href="#" class="text-sky-500">0x1c8c5b6a</a></span>
+                      <i class="fa-regular fa-envelope"></i>
+                      <span
+                        ><a href="#" class="text-sky-500">0x1c8c5b6a</a></span
+                      >
                     </div>
                     <div class="flex gap-2 text-sm items-center font-light">
                       <i class="fa-regular fa-comments"></i>
-                      <span><a href="#" class="text-sky-500">0 comments</a></span>
+                      <span
+                        ><a href="#" class="text-sky-500">0 comments</a></span
+                      >
                     </div>
                   </div>
                 </div>
               </div>
-              <p class="text-black/50"></p>
+              <p class="text-black/50 text-sm">0x1c8c5b6a</p>
+            </div>
+
+            <div class="flex w-full h-auto flex-col gap-5">
+              <div class="share-post flex gap-5 flex-col w-full">
+                <h2 class="font-medium text-base">Share this post</h2>
+                <div class="flex gap-3">
+                  <a
+                    href=""
+                    class="px-2 py-1 bg-sky-900 text-white cursor-pointer"
+                  >
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="px-2 py-1 bg-sky-500 text-white cursor-pointer"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="px-2 py-1 bg-sky-700 text-white cursor-pointer"
+                  >
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="px-2 py-1 bg-red-600 text-white cursor-pointer"
+                  >
+                    <i class="fa-brands fa-google-plus-g"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="px-2 py-1 bg-red-500 text-white cursor-pointer"
+                  >
+                    <i class="fa-solid fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex w-full h-auto flex-col gap-5">
+              <div class="user-post flex gap-5 flex-col w-full">
+                <h2 class="font-medium text-base">Author</h2>
+                <div class="flex gap-3">
+                  <img
+                    src="./images/user-profile.jpg"
+                    alt="user-profile"
+                    class="h-[90px]"
+                  />
+                  <a
+                    href="#"
+                    class="font-medium text-base text-sky-600"
+                    style="font-family: 'Outfit', Open Sans"
+                  >
+                    Webadmin
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex w-full h-auto flex-col gap-5">
+              <div class="user-post flex gap-5 flex-col w-full">
+                <h2 class="font-medium text-base">Leave a reply</h2>
+                <div
+                  class="comment-form w-full flex flex-col gap-3 bg-neutral-100 rounded-md p-6"
+                >
+                  <p class="text-black/50 text-sm">
+                    Your email address will not be published. Required fields
+                    are marked *
+                  </p>
+                  <div class="form flex flex-col gap-3 w-full h-auto">
+                    <div class="flex flex-col gap-1">
+                      <h2
+                        class="font-medium text-sm"
+                        style="font-family: 'Outfit', Open Sans"
+                      >
+                         Comment*
+                      </h2>
+                      <textarea name="comment" id="comment" class="h-[150px] w-full bg-white resize-none"></textarea>
+                    </div>
+
+                    <div class="flex flex-col gap-1">
+                      <h2
+                        class="font-medium text-sm"
+                        style="font-family: 'Outfit', Open Sans"
+                      >
+                         Name*
+                      </h2>
+                      <input name="name" id="name" class="py-2 w-full bg-white"/>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                      <h2
+                        class="font-medium text-sm"
+                        style="font-family: 'Outfit', Open Sans"
+                      >
+                         Email*
+                      </h2>
+                      <input name="email" id="email" class="py-2 w-full bg-white"/>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                      <h2
+                        class="font-medium text-sm"
+                        style="font-family: 'Outfit', Open Sans"
+                      >
+                         Website*
+                      </h2>
+                      <input name="website" id="website" class="py-2 w-full bg-white"/>
+                    </div>
+
+                    <div class="checkbox flex gap-2">
+                        <input type="checkbox" name="save" id="save" >
+                        <p class="text-sm font-medium" style="font-family: 'Outfit', Open Sans;">Save my name, email, and website in this browser for the next time I comment.</p>
+                    </div>
+
+                    <div class="w-full py-3">
+                        <a href="" type="button" class="bg-sky-600 text-white px-3 py-3 text-sm uppercase" style="font-family: 'Outfit', Open Sans;">Post Comment</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
