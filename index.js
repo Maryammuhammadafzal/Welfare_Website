@@ -80,13 +80,14 @@ function setupCounter(sectionId) {
     if (started) return;
     counters.forEach(counter => {
       const target = +counter.getAttribute("data-target").replace(/,/g, "");
+
       let count = 0;
       const speed = target / 100;
 
       const updateCount = () => {
         if (count < target) {
           count += speed;
-          counter.innerText = Math.ceil(count).toLocaleString(); 
+          counter.innerText = Math.ceil(count).toLocaleString();
           requestAnimationFrame(updateCount);
         } else {
           counter.innerText = target.toLocaleString();
@@ -105,7 +106,47 @@ function setupCounter(sectionId) {
   });
 }
 
-setupCounter("counters");        
-setupCounter("about-counter");   
+setupCounter("counters");
+setupCounter("about-counter");
 
-  
+const counters = document.querySelectorAll(".counter");
+  let counterStarted = false;
+
+  function startCounters() {
+    if (counterStarted) return;
+
+    counters.forEach(counter => {
+      const target = +counter.getAttribute("data-target");
+      let count = 0;
+      const speed = target / 100;
+
+      const updateCount = () => {
+        if (count < target) {
+          count += speed;
+          counter.innerText = Math.ceil(count);
+          requestAnimationFrame(updateCount);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCount();
+    });
+
+    counterStarted = true;
+  }
+
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top < window.innerHeight &&
+      rect.bottom > 0
+    );
+  }
+
+  window.addEventListener("scroll", () => {
+    const section = document.getElementById("counters");
+    if (isInViewport(section)) {
+      startCounters();
+    }
+  });
