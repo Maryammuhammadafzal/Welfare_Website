@@ -46,12 +46,12 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleMenuIcon.classList.remove("active");
     mobileMenu.classList.remove("show");
   }
-  
+
   toggleMenuIcon.addEventListener('click', () => {
     toggleMenuIcon.classList.toggle('active');
     mobileMenu.classList.toggle('show');
   })
-  
+
   window.addEventListener("click", (e) => {
     if (
       !toggleMenuIcon.contains(e.target) &&
@@ -60,57 +60,50 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleMenuIcon.classList.remove("active");
       mobileMenu.classList.remove("show");
     }
-  }); 
+  });
 });
 
-  const counters = document.querySelectorAll(".counter");
-  let counterStarted = false;
+function isInViewport(element) {
+  if (!element) return false;
+  const rect = element.getBoundingClientRect();
+  return rect.top < window.innerHeight && rect.bottom > 0;
+}
+
+function setupCounter(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (!section) return;
+
+  let started = false;
+  const counters = section.querySelectorAll(".counter");
 
   function startCounters() {
-    if (counterStarted) return;
-
+    if (started) return;
     counters.forEach(counter => {
-      const target = +counter.getAttribute("data-target");
+      const target = +counter.getAttribute("data-target").replace(/,/g, "");
       let count = 0;
       const speed = target / 100;
 
       const updateCount = () => {
         if (count < target) {
           count += speed;
-          counter.innerText = Math.ceil(count);
+          counter.innerText = Math.ceil(count).toLocaleString(); 
           requestAnimationFrame(updateCount);
         } else {
-          counter.innerText = target;
+          counter.innerText = target.toLocaleString();
         }
       };
 
       updateCount();
     });
-
-    counterStarted = true;
-  }
-
-  function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top < window.innerHeight &&
-      rect.bottom > 0
-    );
+    started = true;
   }
 
   window.addEventListener("scroll", () => {
-    const section = document.getElementById("counters");
     if (isInViewport(section)) {
       startCounters();
     }
-    
   });
+}
 
-  const aboutCounterSection = document.getElementById("about-counters");
-  console.log(aboutCounterSection);
-  
-//   window.addEventListener("scroll", () => {
-//   if (isInViewport(aboutCounterSection)) {
-//     startCounters();
-//   }
-// });
+setupCounter("counters");        
+setupCounter("about-counter");   
