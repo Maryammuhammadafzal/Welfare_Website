@@ -63,3 +63,47 @@ document.addEventListener("DOMContentLoaded", () => {
   }); 
 });
 
+ function isInViewport(element) {
+  if (!element) return false;
+  const rect = element.getBoundingClientRect();
+  return rect.top < window.innerHeight && rect.bottom > 0;
+}
+
+function setupCounter(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (!section) return;
+
+  let started = false;
+  const counters = section.querySelectorAll(".counter");
+
+  function startCounters() {
+    if (started) return;
+    counters.forEach(counter => {
+      const target = +counter.getAttribute("data-target").replace(/,/g, "");
+      let count = 0;
+      const speed = target / 100;
+
+      const updateCount = () => {
+        if (count < target) {
+          count += speed;
+          counter.innerText = Math.ceil(count).toLocaleString();
+          requestAnimationFrame(updateCount);
+        } else {
+          counter.innerText = target.toLocaleString();
+        }
+      };
+
+      updateCount();
+    });
+    started = true;
+  }
+
+  window.addEventListener("scroll", () => {
+    if (isInViewport(section)) {
+      startCounters();
+    }
+  });
+}
+
+setupCounter("counters");         
+setupCounter("about-counters");  
