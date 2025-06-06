@@ -30,7 +30,10 @@
     <title>Contact Us</title>
   </head>
   <body>
-    <div id="main-container" class="main-container relative w-full h-auto min-h-screen">
+    <div
+      id="main-container"
+      class="main-container relative w-full h-auto min-h-screen"
+    >
       <!-- Header -->
       <div class="header w-full bg-white h-[110px] flex flex-col">
         <div
@@ -79,7 +82,10 @@
               <div
                 class="w-full h-auto flex items-center relative justify-between px-4"
               >
-                <a href="./index.html" class="logo w-fit h-auto flex items-center gap-5">
+                <a
+                  href="./index.html"
+                  class="logo w-fit h-auto flex items-center gap-5"
+                >
                   <img src="./images/logo.png" alt="Logo" class="w-[150px]" />
                 </a>
                 <div class="tabs w-fit h-auto flex justify-center items-center">
@@ -337,6 +343,14 @@
                 ></textarea>
               </div>
             </div>
+            <div class="button my-2 w-full flex ">
+              <a
+                href="#"
+                class="rounded-md max-sm:w-[130px] bg-[#7C1C7E] cursor-pointer text-sm px-4 text-white py-2"
+              >
+                Send Message
+              </a>
+            </div>
           </div>
 
           <div
@@ -389,7 +403,7 @@
 
       <!-- Ratings Section -->
       <div
-        class="ratings w-full bg-white h-auto flex justify-center items-center"
+        class="support w-full bg-white h-auto flex justify-center items-center"
       >
         <div
           class="w-full px-3 lg:w-[85%] h-auto flex flex-col justify-center items-center lg:gap-3 gap-8"
@@ -419,7 +433,7 @@
                 <div
                   class="w-full h-full py-7 flex flex-col justify-center items-center gap-6"
                 >
-                  <span class="elementor-icon">
+                  <a href="tel:0304 4798875" class="elementor-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="80"
@@ -440,7 +454,7 @@
                         fill="#7C1C7E"
                       ></path>
                     </svg>
-                  </span>
+                  </a>
 
                   <div
                     class="supporter-num flex flex-col gap-2 justify-center items-center"
@@ -466,7 +480,7 @@
                 <div
                   class="w-full h-full py-7 flex flex-col justify-center items-center gap-6"
                 >
-                  <span class="elementor-icon">
+                  <a href="mailto:info@shahanwelfare.com" class="elementor-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="80"
@@ -503,7 +517,7 @@
                         </clipPath>
                       </defs>
                     </svg>
-                  </span>
+                  </a>
 
                   <div
                     class="supporter-num flex flex-col gap-2 justify-center items-center"
@@ -512,7 +526,7 @@
                       class="text-xl font-medium"
                       style="font-family: 'Outfit', Open Sans"
                     >
-                      Chat with us
+                      Mail us
                     </h2>
                     <p
                       class="text-base text-black/50 text-center px-3 py-2 max-md:text-sm max-sm:text-xs"
@@ -529,7 +543,7 @@
                 <div
                   class="w-full h-full py-7 flex flex-col justify-center items-center gap-6"
                 >
-                  <span class="elementor-icon">
+                  <a href="" class="elementor-icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -550,7 +564,7 @@
                         xlink:href="data:img/png;base64,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"
                       ></image>
                     </svg>
-                  </span>
+                  </a>
 
                   <div
                     class="supporter-num flex flex-col gap-2 justify-center items-center"
@@ -576,7 +590,8 @@
       </div>
 
       <!-- Faq Section -->
-      <div id="help"
+      <div
+        id="help"
         class="faq w-full bg-white h-auto flex justify-center py-10 items-center"
       >
         <div
@@ -828,7 +843,7 @@
         </div>
       </div>
 
-     <!-- Footer -->
+      <!-- Footer -->
       <div class="w-full h-auto pt-10">
         <div
           class="w-full h-auto bg-neutral-50 flex justify-center items-center flex-col"
@@ -840,12 +855,12 @@
               class="logo md:w-[25%] w-full max-md:items-center flex flex-col gap-3"
             >
               <a href="index.html">
-               <img
-                src="./images/logo.png"
-                alt="shahan-logo"
-                class="max-w-[200px]"
-              />
-             </a>
+                <img
+                  src="./images/logo.png"
+                  alt="shahan-logo"
+                  class="max-w-[200px]"
+                />
+              </a>
               <p class="text-xs text-black/50 max-md:text-center leading-6">
                 Whatever it is that you care about, there will be a charity
                 working on it. Charities help in lots of different ways
@@ -871,27 +886,37 @@
               <h2 class="text-base text-black font-medium">Menu</h2>
               <ul class="flex flex-col gap-4">
                 <li>
-                  <a href="./donate-now.html" class="text-black/50 text-xs font-medium"
+                  <a
+                    href="./donate-now.html"
+                    class="text-black/50 text-xs font-medium"
                     >Donations</a
                   >
                 </li>
                 <li>
-                  <a href="./who-we-are.html#features" class="text-black/50 text-xs font-medium"
+                  <a
+                    href="./who-we-are.html#features"
+                    class="text-black/50 text-xs font-medium"
                     >Features</a
                   >
                 </li>
                 <li>
-                  <a href="./our-compaign.html" class="text-black/50 text-xs font-medium"
+                  <a
+                    href="./our-compaign.html"
+                    class="text-black/50 text-xs font-medium"
                     >Categories</a
                   >
                 </li>
                 <li>
-                  <a href="./who-we-are.html#volunteer" class="text-black/50 text-xs font-medium"
+                  <a
+                    href="./who-we-are.html#volunteer"
+                    class="text-black/50 text-xs font-medium"
                     >Volunteers</a
                   >
                 </li>
                 <li>
-                  <a href="./who-we-are.html" class="text-black/50 text-xs font-medium"
+                  <a
+                    href="./who-we-are.html"
+                    class="text-black/50 text-xs font-medium"
                     >About Us</a
                   >
                 </li>
@@ -903,20 +928,32 @@
               <h2 class="text-base text-black font-medium">About us</h2>
               <ul class="flex flex-col gap-4">
                 <li>
-                  <a href="./who-we-are.html#how-it-work" class="text-black/50 text-xs font-medium"
+                  <a
+                    href="./who-we-are.html#how-it-work"
+                    class="text-black/50 text-xs font-medium"
                     >How it work</a
                   >
                 </li>
                 <li>
-                  <a href="./contact-us.html" class="text-black/50 text-xs font-medium"
+                  <a
+                    href="./contact-us.html"
+                    class="text-black/50 text-xs font-medium"
                     >Contact us</a
                   >
                 </li>
                 <li>
-                  <a href="./index.html#faq" class="text-black/50 text-xs font-medium">FAQ</a>
+                  <a
+                    href="./index.html#faq"
+                    class="text-black/50 text-xs font-medium"
+                    >FAQ</a
+                  >
                 </li>
                 <li>
-                  <a href="./contact-us.html#help" class="text-black/50 text-xs font-medium">Help</a>
+                  <a
+                    href="./contact-us.html#help"
+                    class="text-black/50 text-xs font-medium"
+                    >Help</a
+                  >
                 </li>
               </ul>
             </div>
@@ -926,46 +963,46 @@
               <h2 class="text-base text-black font-medium">Contact Info</h2>
               <ul class="flex flex-col gap-5">
                 <li class="flex gap-2">
-                 <a href="tel:0304 4798875" class="flex gap-2">
-                   <span
-                    class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]"
-                  >
-                    <i class="fa-solid text-[10px] fa-phone"></i>
-                  </span>
-                  <p
-                    class="text-black/50 max-md:text-center text-xs font-medium"
-                  >
-                    0304 4798875
-                  </p>
-                 </a>
+                  <a href="tel:0304 4798875" class="flex gap-2">
+                    <span
+                      class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]"
+                    >
+                      <i class="fa-solid text-[10px] fa-phone"></i>
+                    </span>
+                    <p
+                      class="text-black/50 max-md:text-center text-xs font-medium"
+                    >
+                      0304 4798875
+                    </p>
+                  </a>
                 </li>
                 <li class="flex gap-2">
-                 <a href="mailto:info@shahanwelfare.com" class="flex gap-2">
-                   <span
-                    class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]"
-                  >
-                    <i class="fa-solid text-[10px] fa-envelope"></i>
-                  </span>
-                  <p
-                    class="text-black/50 max-md:text-center text-xs font-medium"
-                  >
-                    info@shahanwelfare.com
-                  </p>
-                 </a>
+                  <a href="mailto:info@shahanwelfare.com" class="flex gap-2">
+                    <span
+                      class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]"
+                    >
+                      <i class="fa-solid text-[10px] fa-envelope"></i>
+                    </span>
+                    <p
+                      class="text-black/50 max-md:text-center text-xs font-medium"
+                    >
+                      info@shahanwelfare.com
+                    </p>
+                  </a>
                 </li>
                 <li class="flex gap-2">
-                 <a href="" class="flex gap-2">
-                   <span
-                    class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]"
-                  >
-                    <i class="fa-solid text-[10px] fa-location-dot"></i>
-                  </span>
-                  <p
-                    class="text-black/50 max-md:text-center text-xs font-medium"
-                  >
-                    Pakistan Lahore
-                  </p>
-                 </a>
+                  <a href="" class="flex gap-2">
+                    <span
+                      class="w-6 h-6 pt-[1px] flex justify-center items-center text-white rounded-full bg-[#7C1C7E]"
+                    >
+                      <i class="fa-solid text-[10px] fa-location-dot"></i>
+                    </span>
+                    <p
+                      class="text-black/50 max-md:text-center text-xs font-medium"
+                    >
+                      Pakistan Lahore
+                    </p>
+                  </a>
                 </li>
               </ul>
             </div>
