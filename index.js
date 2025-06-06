@@ -107,3 +107,5 @@ function setupCounter(sectionId) {
 
 setupCounter("counters");        
 setupCounter("about-counter");   
+
+  
